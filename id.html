@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      transition: width 0.5s, height 0.5s;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box"></div>
+
+<script>
+  $(document).ready(function(){
+    $(".box").on("click", function(){
+      $(this).animate({
+        width: "200px",
+        height: "200px"
+      }, 500);
+    });
+  });
+</script>
+
+</body>
+</html>
